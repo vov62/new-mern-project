@@ -45,9 +45,6 @@ export default function UserComponent() {
             <div>
                 {/* פונקציה שמדלגת על ההגדרה של מפתח כלומר key */}
                 {/* {React.Children.toArray(userItems.map(user => { return <h2>{user.name}</h2>; }))} */}
-
-                {/* יצירת טבלה עם כל המידע בפנים */}
-                <TableComponent userItems={userItems} />
             </div>
             <div className="formContainer">
                 <h2>form</h2>
@@ -62,6 +59,10 @@ export default function UserComponent() {
                     <input type="Email" onChange={changeEmailInput} name="Email" required />
                     <button>save user</button>
                 </form>
+            </div>
+            <div>
+                {/* יצירת טבלה עם כל המידע בפנים */}
+                <TableComponent userItems={userItems} />
             </div>
 
         </div>
