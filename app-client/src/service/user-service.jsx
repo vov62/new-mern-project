@@ -1,5 +1,5 @@
 // service תפקידו לקחת את המידע מהשרת
-const apiPort = process.env.PORT || 4000;      // import port from env  מקבלים את הפורט מהורוקו
+const apiPort = process.env.PORT || 8080;      // import port from env  מקבלים את הפורט מהורוקו
 
 const API = `http://localhost:${apiPort}/`;
 
