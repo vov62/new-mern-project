@@ -1,0 +1,46 @@
+[{
+  "_id": {
+    "$oid": "6048ae52d27cfcaac192bcdb"
+  },
+  "name": "AVI",
+  "lastName": "vov",
+  "email": "avi1@gmail.com",
+  "age": 29,
+  "allowed": true
+},{
+  "_id": {
+    "$oid": "6048ae52d27cfcaac192bcdc"
+  },
+  "name": "david",
+  "lastName": "kiv",
+  "email": "avi1@gmail.com",
+  "age": 28,
+  "allowed": true
+},{
+  "_id": {
+    "$oid": "6048ae52d27cfcaac192bcdd"
+  },
+  "name": "kiv",
+  "lastName": "get",
+  "email": "avi1@gmail.com",
+  "age": 30,
+  "allowed": true
+},{
+  "_id": {
+    "$oid": "6048ae52d27cfcaac192bcde"
+  },
+  "name": "jud",
+  "lastName": "aye",
+  "email": "avi1@gmail.com",
+  "age": 29,
+  "allowed": true
+},{
+  "_id": {
+    "$oid": "6048bae4d27cfcaac192bcdf"
+  },
+  "name": "AVI",
+  "lastName": "vov",
+  "email": "avi@gmail.com",
+  "age": 29,
+  "allowed": true
+}]
