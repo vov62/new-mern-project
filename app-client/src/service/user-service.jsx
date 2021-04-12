@@ -1,6 +1,7 @@
 // service תפקידו לקחת את המידע מהשרת
+const apiPort = process.env.PORT || 4000;      // import port from env  מקבלים את הפורט מהורוקו
 
-const API = "http://localhost:4000/";
+const API = `http://localhost:${apiPort}/`;
 
 
 //פונקציה שבודקת אם השרת למעלה
@@ -12,7 +13,7 @@ async function callMyServer() {
             .then(result => { return result.message }) // מחזיר הודעה למשתמש מהשרת. נמצא בדף אינדקס ג'יי אס שורה 24 
     }
     catch (err) {
-        alert(err)
+        console.log(err);
     }
 }
 async function getAllUsers() {
