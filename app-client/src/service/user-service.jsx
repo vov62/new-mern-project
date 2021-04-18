@@ -1,7 +1,7 @@
 // service תפקידו לקחת את המידע מהשרת
-const apiPort = process.env.PORT || 8080;      // import port from env  מקבלים את הפורט מהורוקו
+// const apiPort = process.env.PORT || 8080;      // import port from env  מקבלים את הפורט מהורוקו
 
-const API = `http://localhost:${apiPort}/`;
+const API = process.env.NODE_ENV === 'production' ? 'https://users-mern-application.herokuapp.com/' : `http://localhost:8080`;
 
 
 //פונקציה שבודקת אם השרת למעלה

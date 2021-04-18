@@ -14,6 +14,8 @@ function App() {
   }
   useEffect(callMyServer, [])
 
+
+
   return (
     <div className="App">
       {result}
@@ -21,5 +23,10 @@ function App() {
     </div>
   );
 }
+
+// export function avergeNum(num1, num2, num3, num4) {
+//   let sum = num1 + num2 + num3 + num4;
+//   return sum / 4;
+// }
 
 export default App;
