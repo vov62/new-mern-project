@@ -1,7 +1,9 @@
 // service תפקידו לקחת את המידע מהשרת
+
 // const apiPort = process.env.PORT || 8080;      // import port from env  מקבלים את הפורט מהורוקו
 
-const API = process.env.NODE_ENV === 'production' ? 'https://users-mern-application.herokuapp.com/' : `http://localhost:8080`;
+
+const API = process.env.NODE_ENV === 'production' ? 'https://users-mern-application.herokuapp.com' : `http://localhost:4000`;
 
 
 //פונקציה שבודקת אם השרת למעלה
@@ -18,7 +20,7 @@ async function callMyServer() {
 }
 async function getAllUsers() {
     try {
-        return await fetch(API + 'users')
+        return await fetch(`${API}/users`)
             .then(res => { return res.json() })
             .then(result => { return result.data }) // מחזיר רק את ה data
     }

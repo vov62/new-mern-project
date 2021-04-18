@@ -29,6 +29,11 @@ const path = require('path');
 
 dbConnection.on('error', () => { console.log('dbConnection error'); })
 
+// GET POST DELETE PUT 
+app.listen(apiPort, () => {
+    console.log(`server is up on port: ${apiPort}`);
+})
+
 if (process.env.NODE_ENV === 'production') {
     // Serve any static files
     app.use(express.static(path.join(__dirname, '../app-client/build')));
@@ -41,11 +46,6 @@ if (process.env.NODE_ENV === 'production') {
 // app.get('/', (req, res) => {
 //     res.status(200).json({ message: 'Hello World' }); // מדפיס הודעה למשתמש בפרונט דרך מטודת ולכן צריך בצורה ג'ייסון http 
 // })
-
-// GET POST DELETE PUT 
-app.listen(apiPort, () => {
-    console.log(`server is up on port: ${apiPort}`);
-})
 
 app.use('/users', usersRouter);
 
