@@ -4,6 +4,8 @@
 
 
 const API = process.env.NODE_ENV === 'production' ? 'https://users-mern-application.herokuapp.com' : `http://localhost:4000`;
+// const API = `http://localhost:4000`;
+
 
 
 //פונקציה שבודקת אם השרת למעלה

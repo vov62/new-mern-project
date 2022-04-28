@@ -18,7 +18,7 @@ const usersRouter = require('./routes/users-router');
 // configuration of the port based on the env
 const apiPort = process.env.PORT || 4000;      // import port from env 
 
-//use of body-parser in order to reach teq.body
+//use of body-parser in order to reach req.body
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }))
 

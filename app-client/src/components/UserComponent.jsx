@@ -6,14 +6,14 @@ import './userComponent.css';
 export default function UserComponent() {
     const [userItems, setUsersItem] = useState([]);
     const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('')
+    const [lastName, setLastName] = useState('');
     const [age, setAge] = useState(0);
-    const [email, setEmail] = useState('')
+    const [email, setEmail] = useState('');
 
     useEffect(getUser, [])
 
     function getUser() {
-        getAllUsers().then((res) => { setUsersItem(res) })
+        getAllUsers().then((res) => { setUsersItem(res) });
     }
 
     // פונקציות שמושכות מהאינפוט את הערך ומגדירות את הסטייט בהתאם
@@ -36,7 +36,8 @@ export default function UserComponent() {
     function saveNewUserFrom(event) {
         event.preventDefault(); // מונע את הרענון של הדף שנוצר בגלל הסבמיט של הטופס
         const userToSave = { firstName, lastName, age, email } // שיטת סיריליזיישן , לוקחים משתנים ומאחדים אותם לאובייקט אחד
-        saveUser(userToSave).then(res => { alert(`user created successfully!`); });
+        saveUser(userToSave)
+            .then(res => { alert(`user created successfully!`); });
     }
 
     return (

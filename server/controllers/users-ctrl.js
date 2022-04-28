@@ -37,7 +37,7 @@ async function getAllUsers(req, res) {
     })
 }
 async function getUserById(req, res) {
-    await usersModel.findById(re.params.id, (err, userItem) => {
+    await usersModel.findById(req.params.id, (err, userItem) => {
         if (err) {
             res.status(400).json({ success: false, error: err });
         }

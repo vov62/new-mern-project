@@ -1,8 +1,8 @@
 import React from 'react'
 import './tableDesign.css';
 
-export default function TableComponent(props) {
-    const { userItems } = props;
+export default function TableComponent({ userItems }) {
+    // const { userItems } = props;
 
     return (
         <div>
